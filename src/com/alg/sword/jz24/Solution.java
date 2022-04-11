@@ -2,7 +2,7 @@ package com.alg.sword.jz24;
 
 public class Solution {
 
-    class ListNode {
+    static class ListNode {
 
         int val;
         ListNode next = null;
@@ -12,11 +12,5 @@ public class Solution {
         }
     }
 
-    public ListNode ReverseList(ListNode head) {
 
-        while (head.next!=null){
-
-        }
-        return head;
-    }
 }

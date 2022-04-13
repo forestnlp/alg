@@ -12,6 +12,21 @@ public class Solution {
     }
 
     public ListNode EntryNodeOfLoop(ListNode pHead) {
-        return null;
+        ListNode fast = pHead;
+        ListNode slow = pHead;
+        ListNode p = pHead;
+        if(pHead==null||pHead.next==null) return null;
+        while (fast!=null&&fast.next!=null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast==slow)
+                break;
+        }
+        if(fast==null||fast.next==null) return null;
+        while (p!=slow){
+            p = p.next;
+            slow = slow.next;
+        }
+        return p;
     }
 }

@@ -14,7 +14,7 @@ public class Solution {
 
         if (pHead == null) return null;
 
-
+        return null;
     }
 
     public ListNode deleteDuplication(ListNode node, ListNode node2) {

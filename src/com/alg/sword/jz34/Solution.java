@@ -10,19 +10,15 @@ public class Solution {
 
         public TreeNode(int val) {
             this.val = val;
-
         }
-
     }
 
     ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
 
     public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
-
-        return ans;
+        return null;
     }
 
     public void dfs(TreeNode node,int target,ArrayList<Integer> path){
-
     }
 }

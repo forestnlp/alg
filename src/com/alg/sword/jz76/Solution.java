@@ -11,6 +11,13 @@ public class Solution {
     }
 
     public ListNode deleteDuplication(ListNode pHead) {
+
+        if (pHead == null) return null;
+
+
+    }
+
+    public ListNode deleteDuplication(ListNode node, ListNode) {
         return null;
     }
 }

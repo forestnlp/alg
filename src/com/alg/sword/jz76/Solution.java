@@ -17,7 +17,7 @@ public class Solution {
 
     }
 
-    public ListNode deleteDuplication(ListNode node, ListNode) {
+    public ListNode deleteDuplication(ListNode node, ListNode node2) {
         return null;
     }
 }

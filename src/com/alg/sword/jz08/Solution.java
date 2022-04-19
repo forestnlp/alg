@@ -24,7 +24,11 @@ public class Solution {
 
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
         List<TreeLinkNode> intravels = new LinkedList<>();
-        intravel(pNode,intravels);
+        TreeLinkNode root = pNode;
+        while (root.next!=null){
+            root = root.next;
+        }
+        intravel(root,intravels);
         int pos = intravels.indexOf(pNode);
         if(pos==-1||pos==intravels.size()-1) return null;
         TreeLinkNode nextNode = intravels.get(pos+1);

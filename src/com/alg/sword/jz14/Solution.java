@@ -1,7 +1,5 @@
 package com.alg.sword.jz14;
 
-import java.util.*;
-
 
 public class Solution {
     /**

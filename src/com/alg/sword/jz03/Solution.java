@@ -21,4 +21,8 @@ public class Solution {
         }
         return -1;
     }
+
+    public static void main(String[] args) {
+        new Solution().duplicate(new int[]{1,2,3,4,5,63,3,3,4});
+    }
 }

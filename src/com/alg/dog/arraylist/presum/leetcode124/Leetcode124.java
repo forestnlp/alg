@@ -1,4 +1,4 @@
-package com.alg.dog.leetcode124;
+package com.alg.dog.arraylist.presum.leetcode124;
 
 public class Leetcode124 {
     class Solution {

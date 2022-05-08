@@ -1,4 +1,4 @@
-package com.alg.dog.leetcode304;
+package com.alg.dog.arraylist.presum.leetcode304;
 
 public class Solution {
 
@@ -18,7 +18,11 @@ public class Solution {
         }
 
         public int sumRegion(int row1, int col1, int row2, int col2) {
-            return 0;
+            int i1 = preSum[row1][col1];
+            int i2 = preSum[row1][col2+1];
+            int i3 = preSum[row2+1][col1];
+            int i4 = preSum[row2+1][col2+1];
+            return i4-i3-i2+i1;
         }
     }
 }

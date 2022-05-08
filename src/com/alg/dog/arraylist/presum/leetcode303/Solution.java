@@ -1,4 +1,4 @@
-package com.alg.dog.leetcode303;
+package com.alg.dog.arraylist.presum.leetcode303;
 
 public class Solution {
     class NumArray {

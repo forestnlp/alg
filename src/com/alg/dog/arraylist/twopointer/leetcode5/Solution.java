@@ -10,7 +10,6 @@ public class Solution {
             String s2 = palidrome(s,i,i+1);
             res = s1.length()>res.length()?s1:res;
             res = s2.length()>res.length()?s2:res;
-
         }
 
         return res;

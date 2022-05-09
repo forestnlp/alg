@@ -1,9 +1,5 @@
 package com.alg.sword.jz08;
 
-import java.util.LinkedList;
-import java.util.List;
-
-
 public class Solution2 {
     class TreeLinkNode {
         int val;
@@ -16,7 +12,6 @@ public class Solution2 {
         }
     }
 
-    TreeLinkNode pre = null;
 
     public TreeLinkNode GetNext(TreeLinkNode pNode) {
         //如果该节点有右子树,最左子树的叶子

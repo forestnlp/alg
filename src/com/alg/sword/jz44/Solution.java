@@ -1,8 +1,5 @@
 package com.alg.sword.jz44;
 
-import java.util.*;
-
-
 public class Solution {
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
@@ -15,19 +12,19 @@ public class Solution {
         // write code here
 
         n-=10;
-        int digits = 2;
+        int level = 2;
 
         int m = n;
         while (true) {
-            long cnt = count(digits);
-            if ( cnt * digits > m) break;
-            m -= cnt * digits;
-            digits++;
+            long cnt = count(level);
+            if ( cnt * level > m) break;
+            m -= cnt * level;
+            level++;
         }
 
-        int start = (int) Math.pow(10,digits-1);
-        int more = m/digits;
-        int offset = m%(digits);
+        int start = (int) Math.pow(10,level-1);
+        int more = m/level;
+        int offset = m%(level);
 
         return String.valueOf(start+more).charAt(offset)-'0';
     }

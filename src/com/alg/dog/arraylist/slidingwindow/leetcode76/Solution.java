@@ -5,9 +5,8 @@ import java.util.Map;
 
 public class Solution {
     public String minWindow(String s, String t) {
-        int left = 0, right = 0, len = Integer.MAX_VALUE, start = -1;
+        int left = 0, right = 0, len = Integer.MAX_VALUE, start = 0;
         int valids = 0;
-        String res = "";
 
         Map<Character, Integer> window = new HashMap<>();
         Map<Character, Integer> needs = new HashMap<>();
@@ -21,19 +20,19 @@ public class Solution {
             right++;
             if (needs.containsKey(c)) {
                 window.put(c, window.getOrDefault(c, 0) + 1);
-                if (window.getOrDefault(c,0) == needs.get(c))
+                if (window.getOrDefault(c,0) .equals( needs.get(c)))
                     valids++;
             }
 
-            while (valids == needs.keySet().size()) {
-                if (right - left  <= len) {
-                    len = right - left ;
+            while (valids == needs.size()) {
+                if (right - left  < len) {
                     start = left;
+                    len = right - left ;
                 }
                 char d = s.charAt(left);
                 left++;
                 if(needs.containsKey(d)){
-                    if(window.get(d)==needs.get(d)){
+                    if(window.get(d).equals(needs.get(d))){
                         valids--;
                     }
                     window.put(d,window.get(d)-1);

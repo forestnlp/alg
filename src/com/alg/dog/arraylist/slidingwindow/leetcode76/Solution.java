@@ -1,9 +1,9 @@
-package com.alg.dog.arraylist.slidingwindow;
+package com.alg.dog.arraylist.slidingwindow.leetcode76;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class leetcode76 {
+public class Solution {
 
     public String minWindow(String s, String t) {
 
@@ -31,7 +31,7 @@ public class leetcode76 {
             }
 
             while (valid == need.keySet().size()) {
-                int len = right - left + 1;
+                int len = right - left;
                 if (len < minlen) {
                     start = left;
                     minlen = len;
@@ -48,6 +48,6 @@ public class leetcode76 {
                 }
             }
         }
-        return minlen == Integer.MAX_VALUE ? "" : s.substring(start, start + minlen - 1);
+        return minlen == Integer.MAX_VALUE ? "" : s.substring(start, start + minlen);
     }
 }
